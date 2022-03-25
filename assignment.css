@@ -1,0 +1,146 @@
+body > p {
+  color: purple;
+  font-family: Verdana;
+  font-size:150%;
+  text-align: center;
+}
+
+div > p {
+  color: purple;
+  font-family: Verdana;
+  font-size:150%;
+  
+}
+
+.grid-container-price > div > p {
+  color: black;
+  font-family: Verdana;
+  font-size:50%;
+}
+
+h1 {
+  color: purple;
+}
+
+body {
+  background-image: url('./images/background3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.itemMenu1 { grid-area: Tacos; }
+.itemMenu2 { grid-area: Beer; }
+.itemMenu3 { grid-area: Wine; }	
+.itemMenu4 { grid-area: Deserts; }	
+.itemMenu5 { grid-area: Reservatios; }	
+
+.grid-container-menu {
+  display: grid;
+  grid-template-areas:
+    'Tacos Beer Wine Deserts Reservatios';
+  gap: 3px;
+  background-color: purple;
+  padding: 6px;
+}
+.grid-container-menu > div {
+  background-color: pink;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+}
+
+.grid-container > div {
+  background-color: green;
+  text-align: left;
+  padding: 10px 0;
+  font-size: 30px;
+}
+
+.itemRoti1 {
+  grid-area: rotiArea;
+}
+.itemRoti2 {
+  grid-area: textArea;
+  position: relative;
+  right: 100px;
+  font-size: 10px;
+  font-family: Verdana;
+}
+.grid-container-roti {
+  display: grid;
+  grid-template-areas:
+    'rotiArea textArea textArea textArea';
+  grid-gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.item11 {
+  grid-area: TacoImgArea;
+}
+
+.grid-container-more-food {
+  display: grid;
+  grid-template-areas:
+    'TacoImgArea TacoImgArea TacoImgArea TacoImgArea'
+    'TacoImgArea TacoImgArea TacoImgArea TacoImgArea';
+  grid-gap: 2px;
+  background-color: pink;
+  padding: 1px;
+}
+
+.grid-container-more-food > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.grid-container-fun {
+  display: grid;
+  grid-template-areas:
+    'TacoImgArea TacoImgArea TacoImgArea TacoImgArea'
+    'TacoImgArea TacoImgArea TacoImgArea TacoImgArea';
+  grid-gap: 2px;
+  background-color: pink;
+  padding: 1px;
+}
+
+.grid-container-fun > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+.itemImg { grid-area: menu; }
+.itemPrice1 { grid-area: main; }
+.itemPrice2 { grid-area: footer; }
+
+
+.grid-container-price {
+  display: grid;
+  grid-template-areas:
+    
+    'menu menu menu menu main main'
+    'menu menu menu menu footer footer';
+  gap: 1px;
+  background-color: pink;
+  padding: 10px;
+}
+
+.grid-container-price > div:nth-child(n+2) {
+  background-color: yellow;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 30px;
+}
+
+.itemPrice1, .itemPrice2 {
+  position: relative;
+  right: 100px;
+  font-size: 20px;
+  font-family: Verdana;
+}
+
